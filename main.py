@@ -1,4 +1,5 @@
-import toplama,carpma,bolme,cikarma
+import toplama,carpma,bolme,cikarma,modal
+print("islem kısmına toplama için '+', çıkarma için '-', çarpma için '*', bölme için '/', kalanı bulmak için 'kalan' giriniz")
 while True:
     num1 = int(input("1. sayı: "))
     num2 = int(input("2. sayı: "))
@@ -12,3 +13,5 @@ while True:
             print(cikarma.cikar(num1,num2))
         case "+":
             print(toplama.toplam(num1,num2))
+        case "kalan":
+            print(modal.mod(num1,num2))
