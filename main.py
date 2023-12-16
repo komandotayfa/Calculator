@@ -6,12 +6,13 @@ while True:
     islem = str(input("İşlemi giriniz: "))
     match islem:
         case "*":
-            print(carpma.carp(num1,num2))
+            answer = carpma.carp(num1,num2)
         case "/":
-            print(bolme.bolme(num1,num2))
+            answer = bolme.bolme(num1,num2)
         case "-":
-            print(cikarma.cikar(num1,num2))
+            answer = cikarma.cikar(num1,num2)
         case "+":
-            print(toplama.toplam(num1,num2))
+            answer = toplama.toplam(num1,num2)
         case "kalan":
-            print(modal.mod(num1,num2))
+            answer = modal.mod(num1,num2)
+    print(answer)
